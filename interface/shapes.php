@@ -1,8 +1,13 @@
 <?php
 include "ShapeInterface.php";
-class Triangle implements ShapeInterface{
+include "geomertyInterface.php";
+class Triangle implements ShapeInterface,geometryInterface{
 	public function getArea(){
 		echo "triangle area";
+	}
+
+	public function getCircumference($length,$width){
+		echo "multiple interface example";
 	}
 }
 
