@@ -1,11 +1,12 @@
 <?php
-class Book{
-	static public $price;
-	// private $newprice=35;
+class Example {
+     static private $a =34;
+     static private $b=45;
+     static private $sum;
 
-	static public function bookPrice(){
-		return "hello static function";
-	}
+    static public function addition() {
+    	self::$sum=self::$a + self::$b;
+       return self::$sum;
+    }
 }
-
-echo Book::bookPrice();
+echo Example::addition();
