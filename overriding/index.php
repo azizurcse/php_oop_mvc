@@ -10,6 +10,9 @@ class Father{
 
 class Son extends Father{
 
+	public function name(){
+		return parent::name(). " son name is y rahman"; 
+	}
 }
 
 $son = new Son;
