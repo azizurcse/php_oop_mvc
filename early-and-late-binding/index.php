@@ -1,20 +1,17 @@
 <?php
-class Authors{
-	public static $name='jibon';
+class Author{
+	public $name='jibon';
 
-	public static function author(){
-		return "the author name is: ".self::$name;
-	}
-
-	public static function getauthor(){
-		echo self::author();
+	public function author(){
+		return "the author name is: ".$this->name;
 	}
 }
 
-class newBook extends Authors{
-	public static function author(){
-		return "extends author class name ".self::name. " and rahman";
+class newBook extends Author{
+	public function author(){
+		return "extends author class name ".$this->name. "and rahman";
 	}
 }
 
-Authors::getAuthor();
+$book =new newBook;
+echo $book->author();
