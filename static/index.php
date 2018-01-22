@@ -1,11 +1,11 @@
 <?php
 class Book{
-	static public $price=30;
+	static public $price;
 	// private $newprice=35;
 
-	public function bookPrice(){
-		return $this-$newprice;
+	static public function bookPrice(){
+		return "hello static function";
 	}
 }
 
-echo Book::$price;
+echo Book::bookPrice();
