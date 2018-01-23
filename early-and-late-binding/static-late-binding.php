@@ -3,7 +3,7 @@
 class Authors{
 	public static $name='jibon';
 
-	public static function author(){
+	final public static function author(){
 		return "the author name is: ".self::$name;
 	}
 
