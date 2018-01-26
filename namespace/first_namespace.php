@@ -1,5 +1,5 @@
 <?php
-namespace first;
+
 class A{
 	function __constract(){
 		echo "T am first namespace";
