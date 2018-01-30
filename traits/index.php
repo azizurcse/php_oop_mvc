@@ -4,10 +4,13 @@ include "hp.php";
 include "lenovo.php";
 
 class LaptopBrand extends Laptop{
-use Hp;
+use Hp,Lenovo{
+	Hp::price insteadof Lenovo;
+	Lenovo::price as Lprice;
+}
 }
 
 $hp = new LaptopBrand;
 $hp->brand();
 echo "<br>";
-$hp->price();
+$hp->Lprice();
