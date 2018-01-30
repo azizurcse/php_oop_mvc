@@ -1,16 +1,21 @@
 <?php
 include "laptop.php";
 include "hp.php";
-include "lenovo.php";
+
 
 class LaptopBrand extends Laptop{
-use Hp,Lenovo{
-	Hp::price insteadof Lenovo;
-	Lenovo::price as Lprice;
+use Hp;
+public function price(){
+	echo "i m from home";
 }
+
 }
 
 $hp = new LaptopBrand;
 $hp->brand();
 echo "<br>";
-$hp->Lprice();
+$hp->price();
+
+// first priority for current class
+// second priority for trait
+//third priority for trait use 
