@@ -10,7 +10,7 @@ public function price(){
 }
 
 	public function traitexample(){
-		
+
 	}
 }
 
@@ -18,6 +18,8 @@ $hp = new LaptopBrand;
 $hp->brand();
 echo "<br>";
 $hp->price();
+echo "<br>";
+echo $hp->position;
 
 // first priority for current class
 // second priority for trait
