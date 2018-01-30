@@ -7,4 +7,6 @@ trait Hp{
 	public function price(){
 		echo "hp price $345";
 	}
+
+	abstract function traitexample();
 }

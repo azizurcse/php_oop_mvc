@@ -9,6 +9,9 @@ public function price(){
 	echo "i m from home";
 }
 
+	public function traitexample(){
+		
+	}
 }
 
 $hp = new LaptopBrand;
